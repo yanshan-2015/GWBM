@@ -37,10 +37,10 @@ module.exports = {
                 }
             },{
                 test: /\.css$/,
-                loader: 'style-loaer'
+                loader: 'style-loader!css-loader!'
             },{
                 test: /\.scss$/,
-                loader:  ['style-loader','css-loader','sass-loader']
+                loader: 'style-loader!css-loader!sass-loader!px2rem-loader?remUnit=75&remPrecision=8'
             }, {
                 test:/\.(png|jpg)$/,
                 loader: 'url-loader',
