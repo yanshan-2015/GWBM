@@ -20,6 +20,12 @@ module.exports = {
         contentBase: __dirname +'/src',
         port: 3000,
     },
+    resolve: {
+        alias: {
+            'jquery': __dirname +'/src/js/lib/jQuery1.11.3.min.js',
+            'swiper': __dirname +'/src/js/lib/swiper.jquery.js'
+        }
+    },
     module: {
         loaders:[
             {
